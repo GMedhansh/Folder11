@@ -19,9 +19,9 @@ jobs:
       - name: Checkout ICO Repo
         uses: actions/checkout@v3
         with:
-          repository: GMedhansh/Folder11-Ico
+          repository: GMedhansh/Folder-Ico
           token: ${{ secrets.GITHUB_TOKEN }}
-          path: Folder11-Ico
+          path: Folder-Ico
       - name: Setup Dependencies
         run: |
           sudo apt-get install -y imagemagick jq
