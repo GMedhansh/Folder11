@@ -133,7 +133,7 @@ jobs:
             filename=$(basename -- "$ico_file")
             name="${filename%.*}"
             size=$(stat -c%s "$ico_file")
-            url_icon="https://raw.githubusercontent.com/icon11-community/Folder-Ico/main/ico/$filename"
+            url_icon="https://raw.githubusercontent.com/GMedhansh/Folder-Ico/main/ico/$filename"
             hash=$(cat "$HASH_DIR/$name.hash")
             
             svg_file_path="svg/$name.svg"
@@ -141,7 +141,7 @@ jobs:
             
             small_svg_url=""
             if [ -f "$SMALL_SVG_DIR/$name.svg" ]; then
-              small_svg_url="https://raw.githubusercontent.com/icon11-community/Folder11/main/small/$name.svg"
+              small_svg_url="https://raw.githubusercontent.com/GMedhansh/Folder11/main/small/$name.svg"
             fi
             
             json_content=$(
