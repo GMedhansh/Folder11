@@ -25,7 +25,7 @@ jobs:
       - name: Setup Dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y imagemagick jq --fix-missing
+          sudo apt-get install -y imagemagick jq || sudo apt-get install -y --fix-missing imagemagick jq
           npm install -g svgexport
       - name: Convert SVG to ICO
         id: convert_svg
